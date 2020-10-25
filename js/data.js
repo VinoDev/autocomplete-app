@@ -1,4 +1,4 @@
-import {renderAlert} from './alerts.js';
+import {renderAlert} from './utils/alerts.js';
 
 export const fetchData = async () => {
     try {

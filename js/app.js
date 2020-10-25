@@ -1,5 +1,6 @@
 import autocomplete from './autocomplete.js';
-import {fetchData} from './data.js';
+import outputHtml from './utils/outputHtml.js';
+import { fetchData } from './data.js';
 
 const searchInput = document.querySelector("#search");
 
@@ -9,4 +10,9 @@ const setState = async () => {
 }
 setState()
 
-searchInput.addEventListener("input", () => autocomplete(searchInput.value, state.data));
+searchInput.addEventListener("input", () => autocomplete(
+    searchInput.value, 
+    state.data, 
+    "name",
+    outputHtml)
+);
