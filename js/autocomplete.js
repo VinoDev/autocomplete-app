@@ -1,14 +1,14 @@
-const matchTextToData = (searchText, data, ObjKeyToMatch) => {
-    if(searchText.length === 0 || !data || !ObjKeyToMatch){
+const matchTextToData = (searchText, dataArr, ObjKeyToMatch) => {
+    if(searchText.length === 0 || !dataArr || !ObjKeyToMatch){
         return [];
     }
 
     const regex = new RegExp(`^${searchText}`, 'gi');
 
-    return data.filter(obj => obj[ObjKeyToMatch].match(regex))
+    return dataArr.filter(obj => obj[ObjKeyToMatch].match(regex))
 }
 
-export default (searchText, data, ObjKeyToMatch, render) => {
-    const matches = matchTextToData(searchText, data, ObjKeyToMatch);
+export default (searchText, dataArr, ObjKeyToMatch, render) => {
+    const matches = matchTextToData(searchText, dataArr, ObjKeyToMatch);
     return render ? render(matches) : matches;
 }

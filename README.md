@@ -18,12 +18,13 @@ npm run dev
 Autocomplete is supposed to be a simple reusable function that returns an array of objects
 that is filtered from another array of object according to client's input.
 
-autocomplete recieves a string which is usually client side input, 
-an array of objects on which we will run and search through, a string which is the object key
-we want to look for and compare our client's input to, and **optionally** 
-a render function.
-
 This app is an example of where and how you may use autocomplete.
+
+autocomplete function recieves: 
+* searchText {string} - client side input
+* dataArr {array} - array of objects on which we will run and search through
+* ObjKeyToMatch {string} - the object key we want to look for and compare our client's input to
+* render {function} - **optional**  
 
 ## Code Example
 ```javascript
