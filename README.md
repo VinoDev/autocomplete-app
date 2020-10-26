@@ -1,7 +1,7 @@
 ### Autocomplete App
 This app is an example of how to use autocomplete functionality with plain Javascript.
 
-## Introduction
+## Installation
 Install dependencies with [npm](https://www.npmjs.com/)
 
 ```bash
