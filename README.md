@@ -1,5 +1,5 @@
 ### Autocomplete App
-This app is an example of how to use autocomplete functionality with plain Javascript.
+This [app](https://vinodev.github.io/autocomplete-app/) is an example of how to use autocomplete functionality with plain Javascript.
 
 ## Installation
 Install dependencies with [npm](https://www.npmjs.com/)
